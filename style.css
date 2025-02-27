@@ -332,7 +332,8 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(phelo.jpg);
+        background-image: url(phelo.png);
+        background-position: center;
     }
     .header-text{
         margin-top: 100%; 
