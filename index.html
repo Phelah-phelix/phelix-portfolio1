@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE_edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/efd88d06dc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="# header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+           <div class="header-text" >
+            <p>UI/UX Designer</p>
+            <h>Hi, I'm <span>Phelix</span> <br> from Kenya</h>
+           </div>
+        </div>
+      </div> 
+      <!-----about------>
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"> 
+                  <img src="DSC_0001.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate app developer creating user-friendly solutions like phelochef, 
+                        designed to provide online food booking. Skilled in  software development, UX/UI design, I thrive on solving real-world problems through innovation and collaboration. 
+                        I enjoy tackling challenges and turning ideas into impactful digital experiences.
+                         I’m driven by innovation, accessibility and also collaboration and constantly seek opportunities to learn and grow
+                        Let’s build something amazing!</p>
+                        <div class="tab-title ">
+                            <p class="tab-links active-link" onclick="opetab('skills')"> Skills</p>
+                            <p class="tab-links" onclick="opetab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opetab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Build Android/ios apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-current</span><br>Computer Science at Dekut</li>
+                                <li><span>2019-2022</span><br>A high school dtudent at Orero School<br></li>
+                                <li><span>2014-2018</span><br>A student at The Gates Academy</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2020</span><br>Designing Web/App interfaces</li>
+                                <li><span>2023-2024</span><br>Web app Development<br></li>
+                                <li><span>2024-Current</span><br>Build Android/ios apps</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!----------services-->
+      <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting clean, responsive, and user-friendly websites tailored to your needs.
+                         From front-end design to back-end functionality, I specialize in building seamless  
+                         digital experiences using modern technologies like [e.g., HTML, CSS, JavaScript, React, Node.js]. Whether it’s a personal blog, an e-commerce platform, or a custom web application, I focus on delivering efficient, scalable, and visually appealing solutions. 
+                        Let’s bring your ideas to life!</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                   <p>I design intuitive and visually appealing interfaces that prioritize user needs and enhance engagement. 
+                     From wireframes to prototypes, I focus on creating seamless, user-friendly experiences that solve problems
+                      and leave a lasting impression. 
+                      Let’s build something people love to use!</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Designing intuitive, user-friendly mobile apps that solve problems and deliver seamless experiences. 
+                        From concept to prototype, I focus on creating 
+                        visually appealing and functional designs tailored to your audience. 
+                        Let’s build an app people love to use!</p><br>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!--------------portfolio------->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="WEB DESIGN.jpeg">
+                    <div class="layer">
+                        <h3>Business app</h3>
+                        <p>the app provides you with an opportunity to explore more on business.
+                            Click here to download
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                     <img src="UIUX.jpeg">
+                     <div class="layer">
+                     <h3>Online food order</h3>
+                     <p>The website provides you with an opportunity to order food online.
+                         Click here to download
+                     </p>
+                     <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                     </div>
+            </div>
+            <div class="work">
+                <img src="APP.jpeg">
+                <div class="layer">
+                    <h3>Estate allocator app</h3>
+                    <p>The app provides you the priviadge of getting the nearest estate to you.
+                        Click the link to download
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+       </div>
+        </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!---------------contact-------->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class ="fas fa-paper-plane"></i>ophelix67@gmail.com</p>
+                    <p><i class ="fas fa-phone-square-alt"></i>0110272019</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/Phela Phelix"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="phelixCV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+            </div>
+        </div>
+          </div>
+      <script>
+       var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opetab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+      </script>
+      <script>
+         function openmenu() {
+        document.getElementById('sidemenu').style.right = "0"; // Open the side menu
+    }
+
+    function closemenu() {
+        document.getElementById('sidemenu').style.right = "-200px"; // Close the side menu
+    }
+        
+      </script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw09BVjwcuwhcH5ccR6nWMZCMUdAdp9pvHr3r3iK0Ms0AMjS-LiWMsfUoOFCxKCLy7hPA/exec';
+        const msg = document.getElementById("msg");
+        const form = document.getElementById('submit-to-google-sheet');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Thanks for the feedback"
+                    setTimeout(function() => {
+                            msg.innerHTML = ""
+                        }, 5000);
+                        form.reset();})
+                .then(data => {
+                    if (data.result === 'success') {
+                        msg.innerHTML = "Thanks for the feedback!";
+                        setTimeout(() => {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    } else {
+                        throw new Error(data.error);
+                    }
+                })
+                .catch(error => {
+                    msg.innerHTML = "There was an error!";
+                    console.error('Error!', error.message);
+                });
+        });
+    </script>
+    </body>
+</html>
